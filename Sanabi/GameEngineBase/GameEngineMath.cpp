@@ -8,6 +8,12 @@ const float GameEngineMath::PIE2 = PIE * 2.0f;
 const float GameEngineMath::DegToRad = GameEngineMath::PIE / 180;
 const float GameEngineMath::RadToDeg = 180 / GameEngineMath::PIE;
 
+const int2 int2::Left = int2(-1, 0);
+const int2 int2::Right = int2(1, 0);
+const int2 int2::Up = int2(0, -1);
+const int2 int2::Down = int2(0, 1);
+const int2 int2::Zero = int2(0, 0);
+
 const float4 float4::Left	   = {-1.0f, 0.0f, 0.0f, 1.0f};
 const float4 float4::Right	   = {1.0f, 0.0f, 0.0f, 1.0f };
 const float4 float4::Up		   = { 0.0f, -1.0f, 0.0f, 1.0f };

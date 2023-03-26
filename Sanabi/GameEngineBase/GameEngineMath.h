@@ -24,6 +24,105 @@ private:
 	virtual ~GameEngineMath() = 0;
 };
 
+class int2
+{
+public:
+	static const int2 Left;
+	static const int2 Right;
+	static const int2 Up;
+	static const int2 Down;
+	static const int2 Zero;
+public:
+	int x = 0;
+	int y = 0;
+
+	bool IsZero() const
+	{
+		return x == 0 && y == 0;
+	}
+
+	int2 operator+(const int2& _Other)
+	{
+		int2 Copy = int2(x, y);
+		Copy.x += _Other.x;
+		Copy.y += _Other.y;
+		return Copy;
+	}
+
+	int2& operator+=(const int2& _Other)
+	{
+		this->x += _Other.x;
+		this->y += _Other.y;
+		return *this;
+	}
+
+	int2 operator-(const int2& _Other)
+	{
+		int2 Copy = int2(x, y);
+		Copy.x -= _Other.x;
+		Copy.y -= _Other.y;
+		return Copy;
+	}
+
+	int2& operator-=(const int2& _Other)
+	{
+		this->x -= _Other.x;
+		this->y -= _Other.y;
+		return *this;
+	}
+
+	int2 operator*(const int2& _Other)
+	{
+		int2 Copy = int2(x, y);
+		Copy.x *= _Other.x;
+		Copy.y *= _Other.y;
+		return Copy;
+	}
+
+	int2& operator*=(const int2& _Other)
+	{
+		this->x *= _Other.x;
+		this->y *= _Other.y;
+		return *this;
+	}
+
+	int2& operator*=(int _Scala)
+	{
+		this->x -= _Scala;
+		this->y -= _Scala;
+		return *this;
+	}
+
+	int2 operator/(const int2& _Other)
+	{
+		int2 Copy = int2(x, y);
+		Copy.x /= _Other.x;
+		Copy.y /= _Other.y;
+		return Copy;
+	}
+	
+	int2& operator/=(const int2& _Other)
+	{
+		this->x /= _Other.x;
+		this->y /= _Other.y;
+		return *this;
+	}
+
+	int2& operator/=(int _Scala)
+	{
+		this->x /= _Scala;
+		this->y /= _Scala;
+		return *this;
+	}
+
+	std::string ToString()
+	{
+		char ArrReturn[256];
+		sprintf_s(ArrReturn, "x : %d, y : %d", x, y);
+		return std::string(ArrReturn);
+	}
+};
+
 class float4
 {
 public:

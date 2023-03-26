@@ -5,16 +5,67 @@
     <ClInclude Include="MapToolLevel.h">
       <Filter>Levels</Filter>
     </ClInclude>
+    <ClInclude Include="Tile.h">
+      <Filter>Class\MapTool</Filter>
+    </ClInclude>
+    <ClInclude Include="Grid.h">
+      <Filter>Class\MapTool</Filter>
+    </ClInclude>
+    <ClInclude Include="Map.h">
+      <Filter>Class\MapTool</Filter>
+    </ClInclude>
+    <ClInclude Include="TileActor.h">
+      <Filter>Actor\MapTool</Filter>
+    </ClInclude>
+    <ClInclude Include="ContentEnum.h">
+      <Filter>Class\DataBase</Filter>
+    </ClInclude>
+    <ClInclude Include="ContentConst.h">
+      <Filter>Class\DataBase</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ContentCore.cpp" />
     <ClCompile Include="MapToolLevel.cpp">
       <Filter>Levels</Filter>
     </ClCompile>
+    <ClCompile Include="Tile.cpp">
+      <Filter>Class\MapTool</Filter>
+    </ClCompile>
+    <ClCompile Include="Grid.cpp">
+      <Filter>Class\MapTool</Filter>
+    </ClCompile>
+    <ClCompile Include="Map.cpp">
+      <Filter>Class\MapTool</Filter>
+    </ClCompile>
+    <ClCompile Include="TileActor.cpp">
+      <Filter>Actor\MapTool</Filter>
+    </ClCompile>
+    <ClCompile Include="ContentEnum.cpp">
+      <Filter>Class\DataBase</Filter>
+    </ClCompile>
+    <ClCompile Include="ContentConst.cpp">
+      <Filter>Class\DataBase</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Levels">
       <UniqueIdentifier>{759e7093-e8e9-4af4-95b7-27585a53dff8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Actor">
+      <UniqueIdentifier>{6768c5a6-6419-4dd5-89ad-d25686b46ceb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Actor\MapTool">
+      <UniqueIdentifier>{f8521303-a470-4c52-bc54-41b9b166defd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Class">
+      <UniqueIdentifier>{4ea442ce-e12f-4860-987c-de75f91205cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Class\MapTool">
+      <UniqueIdentifier>{57fe4bed-e73b-461b-8551-97761cfcec38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Class\DataBase">
+      <UniqueIdentifier>{bb83b8a9-03d8-4653-bb8f-f1104dd1f6c8}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
